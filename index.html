@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css"
+        integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="my-container" class="columns is-centered">
+            <div class="column">
+                <h1 class="title has-text-centered">My To Do App</h1>
+                <div class="field has-addons is-justify-content-center">
+                    <div class="control">
+                        <input id="todo-Input" class="input" type="text" placeholder="Add To Do">
+                    </div>
+                    <div id="submit-Btn" class="control">
+                        <a class="button is-success">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="control">
+                        <div class="select">
+                            <select name="todos" class="filter-todo">
+                                <option value="all">All</option>
+                                <option value="completed">Completed</option>
+                                <option value="uncompleted">Uncompleted</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="todo-container">
+        <ul class="todo-List"></ul>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
